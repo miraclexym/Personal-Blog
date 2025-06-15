@@ -1,0 +1,54 @@
+<!-- post.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - 我的博客</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>我的技术博客</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">首页</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <article id="postDetail">
+            <h2 id="postTitle"></h2>
+            <p class="post-meta" id="postDate"></p>
+            <div class="post-content" id="postContent"></div>
+        </article>
+        
+        <section class="comments-section">
+            <h3>评论</h3>
+            <div id="commentsList"></div>
+            
+            <form id="commentForm" class="comment-form">
+                <h4>发表评论</h4>
+                <div class="form-group">
+                    <label for="author">昵称（可选）:</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div class="form-group">
+                    <label for="content">评论内容:</label>
+                    <textarea id="content" name="content" required></textarea>
+                </div>
+                <button type="submit">提交</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>© 2023 我的博客. 保留所有权利.</p>
+    </footer>
+    
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
